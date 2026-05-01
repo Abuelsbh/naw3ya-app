@@ -12,9 +12,9 @@ export default function ExamLesson1Page() {
       <SiteHeader />
       <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-8 sm:px-6">
         <header className="mb-8">
-          <p className="text-sm font-medium text-[#f5e6a3]">Lesson1_Quiz — حسب خطة الدرس</p>
+          <p className="text-sm font-medium text-pink-200">Lesson1_Quiz — حسب خطة الدرس</p>
           <h1 className="mt-2 text-3xl font-extrabold text-white">اختبار: موقع مصر الجغرافي</h1>
-          <p className="mt-3 text-white/75">
+          <p className="mt-3 text-pink-100/80">
             أجب عن جميع الأسئلة ثم اضغط «إنهاء وتقييم» لعرض النتيجة النهائية والملخص التشجيعي.
           </p>
         </header>

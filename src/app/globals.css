@@ -2,11 +2,10 @@
 
 @theme {
   --font-sans: "Tajawal", ui-sans-serif, system-ui, sans-serif;
-  --color-egypt-red: #c8102e;
-  --color-egypt-gold: #c5a00a;
-  --color-egypt-nile: #1e6b8c;
-  --color-egypt-sand: #e8dcc4;
-  --color-egypt-deep: #0f2840;
+  --color-theme-pink: #fbcfe8;
+  --color-theme-rose: #fda4af;
+  --color-theme-deep: #4a0d24;
+  --color-theme-plum: #2d1320;
 }
 
 html {

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-label="13E *H6J-J DE,1J 'DFJD H'D/D*'">
+  <defs>
+    <linearGradient id="nile" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="560" fill="#1a0a12"/>
+  <text x="450" y="38" fill="#fce7f3" font-family="Tajawal,Arial,sans-serif" font-size="22" text-anchor="middle">FG1 'DFJD H/D*'  13E E(3Q7</text>
+  <!-- desert -->
+  <rect x="60" y="70" width="780" height="450" rx="24" fill="#3f2d34" stroke="#f472b6" stroke-opacity="0.35" stroke-width="2"/>
+  <!-- Nile path -->
+  <path fill="none" stroke="url(#nile)" stroke-width="22" stroke-linecap="round" d="M450 480 L450 320 L455 200 L440 120"/>
+  <!-- Delta -->
+  <path fill="#38bdf8" fill-opacity="0.55" stroke="#bae6fd" stroke-width="2" d="M380 120 L520 118 L500 155 L470 170 L410 165 Z"/>
+  <text x="450" y="148" fill="#082f49" font-family="Tajawal,Arial,sans-serif" font-size="15" text-anchor="middle">/D*' 'DFJD</text>
+  <text x="520" y="340" fill="#fbcfe8" font-family="Tajawal,Arial,sans-serif" font-size="16">E3'1 'DFJD 4E'DK' H,FH(K'</text>
+  <text x="120" y="120" fill="#f9a8d4" font-family="Tajawal,Arial,sans-serif" font-size="14">5-1'!</text>
+</svg>
