@@ -1,12 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-label="1EH2 F4'7 'B*5'/J 9DI 'DFJD">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-label="رموز نشاط اقتصادي على النيل">
   <rect width="900" height="560" fill="#1a0a12"/>
-  <text x="450" y="38" fill="#fce7f3" font-family="Tajawal,Arial,sans-serif" font-size="22" text-anchor="middle">EH'1/ HF4'7  21'9) HEJ'G (1E2J)</text>
+  <text x="450" y="38" fill="#fce7f3" font-family="Tajawal,Arial,sans-serif" font-size="22" text-anchor="middle">موارد ونشاط — زراعة ومياه (رمزي)</text>
   <rect x="100" y="360" width="700" height="120" rx="16" fill="#14532d" stroke="#86efac" stroke-width="2"/>
   <path fill="#38bdf8" fill-opacity="0.75" d="M430 150 L470 150 L465 420 L435 420 Z" stroke="#7dd3fc" stroke-width="2"/>
-  <text x="450" y="290" fill="#e0f2fe" font-family="Tajawal,Arial,sans-serif" font-size="13" text-anchor="middle">'DFJD</text>
-  <text x="450" y="430" fill="#ecfdf5" font-family="Tajawal,Arial,sans-serif" font-size="16" text-anchor="middle">#1'6M 21'9J) AJ 'DH'/J H'D/D*'</text>
+  <text x="450" y="290" fill="#e0f2fe" font-family="Tajawal,Arial,sans-serif" font-size="13" text-anchor="middle">النيل</text>
+  <text x="450" y="430" fill="#ecfdf5" font-family="Tajawal,Arial,sans-serif" font-size="16" text-anchor="middle">أراضٍ زراعية في الوادي والدلتا</text>
   <rect x="160" y="200" width="70" height="48" rx="8" fill="#fbcfe8" stroke="#f472b6" stroke-width="2"/>
   <rect x="670" y="200" width="70" height="48" rx="8" fill="#fbcfe8" stroke="#f472b6" stroke-width="2"/>
-  <text x="195" y="230" fill="#831843" font-family="Tajawal,Arial,sans-serif" font-size="12" text-anchor="middle">5F'9)</text>
-  <text x="705" y="230" fill="#831843" font-family="Tajawal,Arial,sans-serif" font-size="12" text-anchor="middle">3J'-)</text>
+  <text x="195" y="230" fill="#831843" font-family="Tajawal,Arial,sans-serif" font-size="12" text-anchor="middle">صناعة</text>
+  <text x="705" y="230" fill="#831843" font-family="Tajawal,Arial,sans-serif" font-size="12" text-anchor="middle">سياحة</text>
 </svg>

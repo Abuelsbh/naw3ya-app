@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 600" role="img" aria-label="13E *H6J-J D-/H/ E51">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 600" role="img" aria-label="رسم توضيحي لحدود مصر">
   <defs>
     <linearGradient id="land" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#fbcfe8"/>
@@ -10,18 +11,13 @@
     </linearGradient>
   </defs>
   <rect width="880" height="600" fill="#1a0a12"/>
-  <text x="440" y="40" fill="#fce7f3" font-family="Tajawal,Arial,sans-serif" font-size="22" text-anchor="middle">-/H/ E51  13E *9DJEJ</text>
-  <!-- Egypt trapezoid -->
+  <text x="440" y="40" fill="#fce7f3" font-family="Tajawal,Arial,sans-serif" font-size="22" text-anchor="middle">حدود مصر — رسم تعليمي</text>
   <path fill="url(#land)" stroke="#fda4af" stroke-width="3" d="M240 160 L640 150 L660 420 L220 430 Z"/>
-  <text x="440" y="310" fill="#1a0a12" font-family="Tajawal,Arial,sans-serif" font-size="26" font-weight="bold" text-anchor="middle">E51</text>
-  <!-- North: Med -->
+  <text x="440" y="310" fill="#1a0a12" font-family="Tajawal,Arial,sans-serif" font-size="26" font-weight="bold" text-anchor="middle">مصر</text>
   <rect x="200" y="95" width="480" height="55" rx="10" fill="url(#water)" stroke="#38bdf8" stroke-width="2"/>
-  <text x="440" y="130" fill="#e0f2fe" font-family="Tajawal,Arial,sans-serif" font-size="16" text-anchor="middle">4E'DK': 'D(-1 'DE*H37</text>
-  <!-- South -->
-  <text x="440" y="470" fill="#fce7f3" font-family="Tajawal,Arial,sans-serif" font-size="15" text-anchor="middle">,FH(K': 'D3H/'F</text>
-  <!-- East: Red sea -->
+  <text x="440" y="130" fill="#e0f2fe" font-family="Tajawal,Arial,sans-serif" font-size="16" text-anchor="middle">شمالًا: البحر المتوسط</text>
+  <text x="440" y="470" fill="#fce7f3" font-family="Tajawal,Arial,sans-serif" font-size="15" text-anchor="middle">جنوبًا: السودان</text>
   <rect x="640" y="150" width="90" height="280" rx="8" fill="url(#water)" opacity="0.85" stroke="#38bdf8" stroke-width="2"/>
-  <text x="685" y="295" fill="#e0f2fe" font-family="Tajawal,Arial,sans-serif" font-size="13" text-anchor="middle" transform="rotate(-90 685 295)">'D(-@1 'D#-E1</text>
-  <!-- West: Libya -->
-  <text x="135" y="300" fill="#fce7f3" font-family="Tajawal,Arial,sans-serif" font-size="15" text-anchor="middle" transform="rotate(-90 135 300)">:1(K': DJ(J'</text>
+  <text x="685" y="295" fill="#e0f2fe" font-family="Tajawal,Arial,sans-serif" font-size="13" text-anchor="middle" transform="rotate(-90 685 295)">البحر الأحمر</text>
+  <text x="135" y="300" fill="#fce7f3" font-family="Tajawal,Arial,sans-serif" font-size="15" text-anchor="middle" transform="rotate(-90 135 300)">غربًا: ليبيا</text>
 </svg>

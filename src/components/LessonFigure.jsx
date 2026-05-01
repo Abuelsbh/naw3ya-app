@@ -8,7 +8,9 @@ export function LessonFigure({ src, alt, caption, priority = false, aspect = "vi
 
   return (
     <figure className="my-5 overflow-hidden rounded-2xl border border-pink-300/35 bg-pink-950/25 shadow-lg shadow-pink-950/30">
-      <div className={`relative w-full ${aspectClass} bg-black/30`}>
+      <div
+        className={`relative flex w-full items-center justify-center bg-black/30 ${aspectClass}`}
+      >
         {useNextImage ? (
           <Image
             src={src}
@@ -19,11 +21,11 @@ export function LessonFigure({ src, alt, caption, priority = false, aspect = "vi
             sizes="(max-width: 768px) 100vw, 42rem"
           />
         ) : (
-          // eslint-disable-next-line @next/next/no-img-element -- SVG من public يُعرض مباشرة لتوافق الإنتاج
+          // eslint-disable-next-line @next/next/no-img-element -- SVG من public يُعرض مباشرة
           <img
             src={src}
             alt={alt}
-            className="absolute inset-0 h-full w-full object-contain"
+            className="max-h-full w-full object-contain p-1"
             loading={priority ? "eager" : "lazy"}
             decoding="async"
             {...(priority ? { fetchPriority: "high" } : {})}

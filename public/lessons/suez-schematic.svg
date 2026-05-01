@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" role="img" aria-label="13E JH6- 1(7 'D(-1JF 9(1 BF')">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" role="img" aria-label="رسم يوضح ربط البحرين عبر قناة">
   <defs>
     <linearGradient id="w" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#0369a1"/>
@@ -6,18 +7,14 @@
     </linearGradient>
   </defs>
   <rect width="920" height="520" fill="#1a0a12"/>
-  <text x="460" y="40" fill="#fce7f3" font-family="Tajawal,Arial,sans-serif" font-size="22" text-anchor="middle">BF') 'D3HJ3  1(7 'D(-1JF (*H6J-J)</text>
-  <!-- Mediterranean -->
+  <text x="460" y="40" fill="#fce7f3" font-family="Tajawal,Arial,sans-serif" font-size="22" text-anchor="middle">قناة السويس — ربط البحرين (توضيحي)</text>
   <rect x="60" y="100" width="320" height="300" rx="20" fill="url(#w)" opacity="0.85" stroke="#7dd3fc" stroke-width="2"/>
-  <text x="220" y="255" fill="#e0f2fe" font-family="Tajawal,Arial,sans-serif" font-size="17" text-anchor="middle">'D(-1 'D#(J6 'DE*H37</text>
-  <!-- Red sea -->
+  <text x="220" y="255" fill="#e0f2fe" font-family="Tajawal,Arial,sans-serif" font-size="17" text-anchor="middle">البحر الأبيض المتوسط</text>
   <rect x="540" y="100" width="320" height="300" rx="20" fill="url(#w)" opacity="0.85" stroke="#7dd3fc" stroke-width="2"/>
-  <text x="700" y="255" fill="#e0f2fe" font-family="Tajawal,Arial,sans-serif" font-size="17" text-anchor="middle">'D(-1 'D#-E1</text>
-  <!-- Canal -->
+  <text x="700" y="255" fill="#e0f2fe" font-family="Tajawal,Arial,sans-serif" font-size="17" text-anchor="middle">البحر الأحمر</text>
   <rect x="380" y="230" width="160" height="40" rx="8" fill="#fde68a" stroke="#f472b6" stroke-width="3"/>
-  <text x="460" y="256" fill="#422006" font-family="Tajawal,Arial,sans-serif" font-size="14" font-weight="bold" text-anchor="middle">BF') 'D3HJ3</text>
-  <!-- Ships hint -->
+  <text x="460" y="256" fill="#422006" font-family="Tajawal,Arial,sans-serif" font-size="14" font-weight="bold" text-anchor="middle">قناة السويس</text>
   <path fill="#fef3c7" stroke="#a16207" d="M150 360 L190 345 L190 375 Z"/>
   <path fill="#fef3c7" stroke="#a16207" d="M760 360 L800 345 L800 375 Z"/>
-  <text x="460" y="420" fill="#f9a8d4" font-family="Tajawal,Arial,sans-serif" font-size="15" text-anchor="middle">*HAJ1 2EF 'D1-D) DD3AF (JF 'DB'1*JF</text>
+  <text x="460" y="420" fill="#f9a8d4" font-family="Tajawal,Arial,sans-serif" font-size="15" text-anchor="middle">توفير زمن الرحلة للسفن بين القارتين</text>
 </svg>

@@ -1,9 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-label="1EH2 EF'. 5-1'HJ">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-label="رموز مناخ صحراوي">
   <rect width="900" height="560" fill="#1a0a12"/>
-  <text x="450" y="38" fill="#fce7f3" font-family="Tajawal,Arial,sans-serif" font-size="22" text-anchor="middle">EF'. 5-1'HJ  4E3 HF7'B ,'A (1E2J)</text>
+  <text x="450" y="38" fill="#fce7f3" font-family="Tajawal,Arial,sans-serif" font-size="22" text-anchor="middle">مناخ صحراوي — شمس ونطاق جاف (رمزي)</text>
   <circle cx="720" cy="140" r="64" fill="#fde047" stroke="#facc15" stroke-width="4"/>
   <path fill="#7c2d12" fill-opacity="0.55" d="M120 420 Q260 300 420 360 T780 400 L780 520 L80 520 Z" stroke="#fb7185" stroke-width="2" stroke-opacity="0.35"/>
-  <text x="450" y="440" fill="#fbcfe8" font-family="Tajawal,Arial,sans-serif" font-size="16" text-anchor="middle">BDQ) 'D#E7'1  -1'1) 5JAJ) E1*A9)</text>
+  <text x="450" y="440" fill="#fbcfe8" font-family="Tajawal,Arial,sans-serif" font-size="16" text-anchor="middle">قلّة الأمطار — حرارة صيفية مرتفعة</text>
   <path fill="none" stroke="#7dd3fc" stroke-width="3" stroke-dasharray="10 8" d="M180 200 Q450 120 720 220"/>
-  <text x="450" y="115" fill="#bae6fd" font-family="Tajawal,Arial,sans-serif" font-size="14" text-anchor="middle">17H() (-1J) 9DI 'D3'-D 'D4E'DJ</text>
+  <text x="450" y="115" fill="#bae6fd" font-family="Tajawal,Arial,sans-serif" font-size="14" text-anchor="middle">رطوبة بحرية على الساحل الشمالي</text>
 </svg>
