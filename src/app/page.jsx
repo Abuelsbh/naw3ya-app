@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
+import { isRasterPublicImage } from "@/lib/imageKind";
 import { lessonCardImages, MEDIA_NOTE } from "@/lib/lessonMedia";
 
 const lessons = [
@@ -95,13 +96,24 @@ export default function HomePage() {
                   className={`group flex h-full flex-col overflow-hidden rounded-2xl border bg-gradient-to-br transition hover:border-pink-300/50 hover:bg-pink-950/25 ${l.border} ${l.accent}`}
                 >
                   <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-pink-400/20 bg-black/20">
-                    <Image
-                      src={thumb.src}
-                      alt={thumb.alt}
-                      fill
-                      className="object-contain transition duration-300 group-hover:scale-[1.02]"
-                      sizes="(max-width: 640px) 100vw, 50vw"
-                    />
+                    {isRasterPublicImage(thumb.src) ? (
+                      <Image
+                        src={thumb.src}
+                        alt={thumb.alt}
+                        fill
+                        className="object-contain transition duration-300 group-hover:scale-[1.02]"
+                        sizes="(max-width: 640px) 100vw, 50vw"
+                      />
+                    ) : (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={thumb.src}
+                        alt={thumb.alt}
+                        className="absolute inset-0 h-full w-full object-contain transition duration-300 group-hover:scale-[1.02]"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    )}
                   </div>
                   <div className="flex flex-1 flex-col p-5">
                     <span className="w-fit rounded-full bg-black/35 px-3 py-1 text-xs font-medium text-pink-100">
