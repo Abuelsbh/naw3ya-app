@@ -3,8 +3,8 @@ import Link from "next/link";
 import { LessonVideo } from "@/components/LessonVideo";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { isRasterPublicImage } from "@/lib/imageKind";
-import { lessonCardImages, MEDIA_NOTE } from "@/lib/lessonMedia";
-import { homeIntroVideo, VIDEO_NOTE } from "@/lib/lessonVideos";
+import { lessonCardImages } from "@/lib/lessonMedia";
+import { homeIntroVideo } from "@/lib/lessonVideos";
 
 const lessons = [
   {
@@ -72,7 +72,6 @@ export default function HomePage() {
             تعلّم تفاعلي باللغة العربية: دروس مع صور توضيحية (خريطة، علم، نيل، قناة السويس…)،
             ثم اختبار يقيّم فهمك.
           </p>
-          <p className="relative mt-2 text-xs text-theme-dark/50">{MEDIA_NOTE}</p>
           <div className="relative mt-8 flex flex-wrap gap-3">
             <Link
               href="/lesson1"
@@ -91,7 +90,6 @@ export default function HomePage() {
 
         <section className="surface-card mt-12 rounded-2xl border border-theme-primary/15 p-6 sm:p-8">
           <h2 className="text-xl font-bold text-theme-dark">فيديو تعريفي</h2>
-          <p className="mt-2 text-xs text-theme-dark/55">{VIDEO_NOTE}</p>
           <LessonVideo {...homeIntroVideo} className="mt-5 !my-0" />
         </section>
 

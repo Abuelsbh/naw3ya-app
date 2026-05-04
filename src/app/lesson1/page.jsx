@@ -2,8 +2,8 @@ import Link from "next/link";
 import { LessonFigure, LessonFigurePair } from "@/components/LessonFigure";
 import { LessonVideo } from "@/components/LessonVideo";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
-import { lesson1Figures, MEDIA_NOTE } from "@/lib/lessonMedia";
-import { lessonVideos, VIDEO_NOTE } from "@/lib/lessonVideos";
+import { lesson1Figures } from "@/lib/lessonMedia";
+import { lessonVideos } from "@/lib/lessonVideos";
 
 const sections = [
   {
@@ -146,8 +146,6 @@ export default function Lesson1Page() {
     <div className="flex min-h-screen flex-col">
       <SiteHeader />
       <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-8 sm:px-6">
-        <p className="mb-2 text-center text-xs text-theme-dark/50">{MEDIA_NOTE}</p>
-        <p className="mb-4 text-center text-xs text-theme-dark/50">{VIDEO_NOTE}</p>
         <nav aria-label="أجزاء الدرس" className="mb-8 flex flex-wrap gap-2 text-sm">
           {sections.map((s) => (
             <a

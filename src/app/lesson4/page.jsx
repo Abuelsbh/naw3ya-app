@@ -2,16 +2,14 @@ import Link from "next/link";
 import { LessonFigure } from "@/components/LessonFigure";
 import { LessonVideo } from "@/components/LessonVideo";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
-import { lesson4Figure, MEDIA_NOTE } from "@/lib/lessonMedia";
-import { lessonVideos, VIDEO_NOTE } from "@/lib/lessonVideos";
+import { lesson4Figure } from "@/lib/lessonMedia";
+import { lessonVideos } from "@/lib/lessonVideos";
 
 export default function Lesson4Page() {
   return (
     <div className="flex min-h-screen flex-col">
       <SiteHeader />
       <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-8 sm:px-6">
-        <p className="mb-2 text-center text-xs text-theme-dark/50">{MEDIA_NOTE}</p>
-        <p className="mb-4 text-center text-xs text-theme-dark/50">{VIDEO_NOTE}</p>
         <header className="surface-card mb-8 rounded-2xl border border-theme-primary/22 p-6">
           <p className="text-sm text-theme-accent">الدرس الرابع</p>
           <h1 className="mt-2 text-3xl font-extrabold text-theme-dark">

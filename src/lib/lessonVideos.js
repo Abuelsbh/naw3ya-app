@@ -1,7 +1,3 @@
-/** ملاحظة للمستخدم: غيّر المعرفات من الرابط بعد watch?v= */
-export const VIDEO_NOTE =
-  "الفيديوهات مُدمجة من يوتيوب (قنوات تعليمية خارجية). يمكن استبدالها من ملف lessonVideos.js في المشروع.";
-
 /** فيديو ترحيبي على الصفحة الرئيسية */
 export const homeIntroVideo = {
   youtubeId: "6lT-pFQKcVw",
