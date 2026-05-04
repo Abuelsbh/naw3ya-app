@@ -222,6 +222,15 @@ export default function Lesson1Page() {
             ابدأ الاختبار الآن
           </Link>
         </section>
+
+        <div className="mt-10 flex flex-wrap gap-3">
+          <Link
+            href="/lesson2"
+            className="rounded-xl bg-gradient-to-l from-theme-primary to-theme-accent px-4 py-2 text-sm font-bold text-white shadow-md shadow-theme-primary/28 ring-1 ring-theme-dark/10 hover:brightness-110"
+          >
+            الدرس التالي
+          </Link>
+        </div>
       </main>
       <SiteFooter />
     </div>
