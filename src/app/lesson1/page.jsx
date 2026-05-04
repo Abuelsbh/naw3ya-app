@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { LessonFigure, LessonFigurePair } from "@/components/LessonFigure";
+import { LessonVideo } from "@/components/LessonVideo";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { lesson1Figures, MEDIA_NOTE } from "@/lib/lessonMedia";
+import { lessonVideos, VIDEO_NOTE } from "@/lib/lessonVideos";
 
 const sections = [
   {
@@ -29,7 +31,7 @@ const sections = [
     goal: "تحديد موقع مصر بالنسبة لقارات العالم القديم وتسمية القارة التي تقع فيها.",
     body: (
       <>
-        <ul className="list-disc space-y-2 pr-5 marker:text-pink-300">
+        <ul className="list-disc space-y-2 pr-5 marker:text-theme-accent">
           <li>
             تقع مصر في <strong>الركن الشمالي الشرقي</strong> من قارة <strong>أفريقيا</strong>.
           </li>
@@ -47,16 +49,16 @@ const sections = [
     goal: "التمييز بين الحدود الطبيعية (البحار) والحدود البشرية (الدول).",
     body: (
       <>
-        <div className="mt-2 overflow-hidden rounded-xl border border-pink-400/25 bg-pink-950/25">
+        <div className="surface-card mt-2 overflow-hidden rounded-xl border border-theme-primary/20">
           <table className="w-full text-right text-sm">
-            <thead className="bg-pink-500/15 text-white">
+            <thead className="bg-theme-primary/12 text-theme-dark">
               <tr>
                 <th className="px-4 py-3 font-bold">الاتجاه</th>
                 <th className="px-4 py-3 font-bold">الحد</th>
                 <th className="px-4 py-3 font-bold">النوع</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-pink-400/15 text-pink-50/90">
+            <tbody className="divide-y divide-theme-primary/12 text-theme-dark/90">
               <tr>
                 <td className="px-4 py-3">شمالًا</td>
                 <td className="px-4 py-3">البحر المتوسط</td>
@@ -89,7 +91,7 @@ const sections = [
     goal: "شرح دور نهر النيل في قيام الحضارة وأثر الموقع على التجارة العالمية.",
     body: (
       <>
-        <ul className="list-disc space-y-2 pr-5 marker:text-pink-300">
+        <ul className="list-disc space-y-2 pr-5 marker:text-theme-accent">
           <li>
             مصر <strong>قلب العالم العربي والإسلامي</strong> جغرافيًا وحضاريًا في كثير من
             السياقات التعليمية والثقافية.
@@ -112,7 +114,7 @@ const sections = [
     goal: "توضيح أهمية قناة السويس كممر ملاحي يربط البحرين الأحمر والمتوسط.",
     body: (
       <>
-        <ul className="list-disc space-y-2 pr-5 marker:text-pink-300">
+        <ul className="list-disc space-y-2 pr-5 marker:text-theme-accent">
           <li>
             تربط قناة السويس بين <strong>البحر الأحمر</strong> و<strong>البحر المتوسط</strong>،
             فتختصر على السفن رحلة طويلة حول أفريقيا.
@@ -144,33 +146,44 @@ export default function Lesson1Page() {
     <div className="flex min-h-screen flex-col">
       <SiteHeader />
       <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-8 sm:px-6">
-        <p className="mb-4 text-center text-xs text-pink-200/55">{MEDIA_NOTE}</p>
+        <p className="mb-2 text-center text-xs text-theme-dark/50">{MEDIA_NOTE}</p>
+        <p className="mb-4 text-center text-xs text-theme-dark/50">{VIDEO_NOTE}</p>
         <nav aria-label="أجزاء الدرس" className="mb-8 flex flex-wrap gap-2 text-sm">
           {sections.map((s) => (
             <a
               key={s.id}
               href={`#${s.id}`}
-              className="rounded-full bg-pink-500/15 px-3 py-1.5 font-medium text-pink-50 ring-1 ring-pink-400/25 transition hover:bg-pink-500/25"
+              className="rounded-full bg-theme-primary/12 px-3 py-1.5 font-medium text-theme-dark ring-1 ring-theme-primary/25 transition hover:bg-theme-primary/20"
             >
               {s.title}
             </a>
           ))}
         </nav>
 
-        <header className="mb-10 rounded-2xl border border-pink-400/35 bg-gradient-to-l from-pink-600/20 to-transparent p-6 sm:p-8">
-          <p className="text-sm font-medium text-pink-200">الدرس الأول — الصف الرابع</p>
-          <h1 className="mt-2 text-3xl font-extrabold text-white sm:text-4xl">موقع مصر الجغرافي</h1>
-          <p className="mt-4 text-pink-100/85">
+        <header className="surface-card mb-10 rounded-2xl border border-theme-primary/22 bg-gradient-to-l from-theme-primary/12 to-transparent p-6 sm:p-8">
+          <p className="text-sm font-medium text-theme-accent">الدرس الأول — الصف الرابع</p>
+          <h1 className="mt-2 text-3xl font-extrabold text-theme-dark sm:text-4xl">موقع مصر الجغرافي</h1>
+          <p className="mt-4 text-theme-dark/85">
             خطة الدرس مقسمة إلى: بداية، موقع مصر، الحدود، الأهمية، قناة السويس، ثم اختبار
             تفاعلي ونتيجة نهائية.
           </p>
           <Link
             href="/exam/lesson1"
-            className="mt-6 inline-flex rounded-xl bg-gradient-to-l from-pink-500 to-rose-500 px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-pink-600/30 transition hover:brightness-110"
+            className="mt-6 inline-flex rounded-xl bg-gradient-to-l from-theme-primary to-theme-accent px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-theme-primary/28 ring-1 ring-theme-dark/10 transition hover:brightness-110"
           >
             انتقل إلى الأسئلة والاختبار
           </Link>
         </header>
+
+        <section
+          aria-labelledby="lesson1-video-heading"
+          className="surface-card mb-10 rounded-2xl border border-theme-primary/18 p-6 sm:p-8"
+        >
+          <h2 id="lesson1-video-heading" className="text-lg font-bold text-theme-accent">
+            شرح مرئي للدرس
+          </h2>
+          <LessonVideo {...lessonVideos[1]} className="mt-4 !my-0" />
+        </section>
 
         <div className="space-y-10">
           {sections.map((s) => {
@@ -179,11 +192,11 @@ export default function Lesson1Page() {
               <article
                 key={s.id}
                 id={s.id}
-                className="scroll-mt-24 rounded-2xl border border-pink-400/20 bg-pink-950/20 p-6 sm:p-8"
+                className="surface-card scroll-mt-24 rounded-2xl border border-theme-primary/15 p-6 sm:p-8"
               >
-                <h2 className="text-xl font-bold text-pink-200">{s.title}</h2>
-                <p className="mt-3 text-sm leading-relaxed text-pink-100/90">
-                  <span className="font-semibold text-pink-200">الهدف: </span>
+                <h2 className="text-xl font-bold text-theme-accent">{s.title}</h2>
+                <p className="mt-3 text-sm leading-relaxed text-theme-dark/88">
+                  <span className="font-semibold text-theme-primary">الهدف: </span>
                   {s.goal}
                 </p>
                 {media ? (
@@ -193,20 +206,20 @@ export default function Lesson1Page() {
                     <LessonFigure {...media} priority={false} />
                   )
                 ) : null}
-                <div className="mt-4 space-y-3 leading-relaxed text-pink-50/88">{s.body}</div>
+                <div className="mt-4 space-y-3 leading-relaxed text-theme-dark/88">{s.body}</div>
               </article>
             );
           })}
         </div>
 
-        <section className="mt-12 rounded-2xl border border-dashed border-pink-400/30 bg-pink-950/25 p-6 text-center">
-          <h2 className="text-lg font-bold text-white">النتيجة النهائية</h2>
-          <p className="mt-2 text-pink-100/75">
+        <section className="surface-card mt-12 rounded-2xl border border-dashed border-theme-accent/35 p-6 text-center">
+          <h2 className="text-lg font-bold text-theme-dark">النتيجة النهائية</h2>
+          <p className="mt-2 text-theme-dark/75">
             بعد إكمال الاختبار ستشاهد تقييمًا سريعًا ورسالة تشجيعية وملخصًا لأهم نقاط الدرس.
           </p>
           <Link
             href="/exam/lesson1"
-            className="mt-4 inline-flex rounded-xl bg-gradient-to-l from-rose-500 to-pink-500 px-6 py-3 font-bold text-white shadow-lg shadow-pink-600/25 transition hover:brightness-110"
+            className="mt-4 inline-flex rounded-xl bg-gradient-to-l from-theme-primary to-theme-accent px-6 py-3 font-bold text-white shadow-lg shadow-theme-primary/28 ring-1 ring-theme-dark/10 transition hover:brightness-110"
           >
             ابدأ الاختبار الآن
           </Link>

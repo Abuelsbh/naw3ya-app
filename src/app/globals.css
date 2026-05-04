@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Tajawal", ui-sans-serif, system-ui, sans-serif;
-  --color-theme-pink: #fbcfe8;
-  --color-theme-rose: #fda4af;
-  --color-theme-deep: #4a0d24;
-  --color-theme-plum: #2d1320;
+  --color-theme-primary: #2e7d32; /* أخضر غامق (طبيعة / غابات) */
+  --color-theme-secondary: #4fc3f7; /* أزرق سماوي (مياه / سماء) */
+  --color-theme-accent: #0288d1; /* أزرق بحري (تركيز / أزرار) */
+  --color-theme-earth: #f4ead5; /* بيج (لون الأرض / خلفية) */
+  --color-theme-dark: #1b3a2f; /* أخضر داكن جدًا (نصوص / فوتر) */
 }
 
 html {
@@ -13,5 +13,23 @@ html {
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: inherit;
+  color: var(--color-theme-dark);
+  background-color: var(--color-theme-earth);
+  background-image:
+    radial-gradient(ellipse 120% 90% at 100% -15%, rgb(46 125 50 / 0.11), transparent 55%),
+    radial-gradient(ellipse 100% 80% at -10% 110%, rgb(79 195 247 / 0.22), transparent 48%),
+    radial-gradient(ellipse 70% 50% at 50% 40%, transparent, rgb(244 234 213 / 0.65));
+}
+
+/* تأثير ورقي خفيف على البطاقات — يُستخدم مع الفئات في JSX */
+.surface-card {
+  background: linear-gradient(
+    145deg,
+    rgb(255 255 255 / 0.94) 0%,
+    rgb(255 255 255 / 0.82) 100%
+  );
+  box-shadow:
+    0 1px 0 rgb(27 58 47 / 0.06),
+    0 18px 48px -24px rgb(27 58 47 / 0.14);
 }

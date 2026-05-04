@@ -1,15 +1,15 @@
 import Image from "next/image";
 import { isRasterPublicImage } from "@/lib/imageKind";
 
-/** صورة درس بإطار يتماشى مع الثيم الوردي */
+/** صورة درس بإطار يتماشى مع ثيم الطبيعة والمياه */
 export function LessonFigure({ src, alt, caption, priority = false, aspect = "video" }) {
   const aspectClass = aspect === "square" ? "aspect-square max-h-72" : "aspect-video";
   const useNextImage = isRasterPublicImage(src);
 
   return (
-    <figure className="my-5 overflow-hidden rounded-2xl border border-pink-300/35 bg-pink-950/25 shadow-lg shadow-pink-950/30">
+    <figure className="surface-card my-5 overflow-hidden rounded-2xl border border-theme-primary/22 shadow-lg shadow-theme-dark/10">
       <div
-        className={`relative flex w-full items-center justify-center bg-black/30 ${aspectClass}`}
+        className={`relative flex w-full items-center justify-center bg-theme-dark/[0.06] ${aspectClass}`}
       >
         {useNextImage ? (
           <Image
@@ -33,7 +33,7 @@ export function LessonFigure({ src, alt, caption, priority = false, aspect = "vi
         )}
       </div>
       {caption ? (
-        <figcaption className="border-t border-pink-300/20 px-3 py-2.5 text-center text-xs leading-relaxed text-pink-100/80">
+        <figcaption className="border-t border-theme-primary/15 px-3 py-2.5 text-center text-xs leading-relaxed text-theme-dark/75">
           {caption}
         </figcaption>
       ) : null}

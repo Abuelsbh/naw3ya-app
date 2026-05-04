@@ -87,7 +87,7 @@ export function Lesson1Quiz() {
 
   const strengthsWeakness =
     percent == null ? null : (
-      <ul className="mt-3 list-disc space-y-1 pr-5 text-right text-sm text-pink-100/85">
+      <ul className="mt-3 list-disc space-y-1 pr-5 text-right text-sm text-theme-dark/82">
         <li>
           <strong>نقاط قوة محتملة:</strong> الأسئلة التي أجبت عنها بشكل صحيح تعكس استيعابك
           لتلك الأفكار.
@@ -117,11 +117,14 @@ export function Lesson1Quiz() {
   return (
     <div className="space-y-8">
       {QUESTIONS.map((q, idx) => (
-        <div key={q.id} className="rounded-2xl border border-pink-400/25 bg-pink-950/25 p-5 sm:p-6">
-          <p className="text-sm font-medium text-pink-200">
+        <div
+          key={q.id}
+          className="surface-card rounded-2xl border border-theme-primary/18 p-5 sm:p-6"
+        >
+          <p className="text-sm font-medium text-theme-accent">
             سؤال {idx + 1} من {total}
           </p>
-          <p className="mt-2 text-lg font-semibold text-white">{q.prompt}</p>
+          <p className="mt-2 text-lg font-semibold text-theme-dark">{q.prompt}</p>
 
           {q.type === "tf" && (
             <div className="mt-4 flex flex-wrap gap-3">
@@ -130,8 +133,8 @@ export function Lesson1Quiz() {
                 onClick={() => setTf(q.id, true)}
                 className={`rounded-xl border px-4 py-2 text-sm font-bold transition ${
                   answers[q.id] === true
-                    ? "border-emerald-400/60 bg-emerald-500/20 text-emerald-100"
-                    : "border-pink-400/30 bg-black/25 text-pink-50 hover:bg-pink-500/15"
+                    ? "border-emerald-500/50 bg-emerald-500/12 text-emerald-900"
+                    : "border-theme-primary/18 bg-white/70 text-theme-dark hover:bg-theme-secondary/12"
                 }`}
               >
                 صح
@@ -141,8 +144,8 @@ export function Lesson1Quiz() {
                 onClick={() => setTf(q.id, false)}
                 className={`rounded-xl border px-4 py-2 text-sm font-bold transition ${
                   answers[q.id] === false
-                    ? "border-rose-400/60 bg-rose-500/20 text-rose-100"
-                    : "border-pink-400/30 bg-black/25 text-pink-50 hover:bg-pink-500/15"
+                    ? "border-slate-400/50 bg-slate-200/80 text-theme-dark"
+                    : "border-theme-primary/18 bg-white/70 text-theme-dark hover:bg-theme-secondary/12"
                 }`}
               >
                 خطأ
@@ -164,17 +167,17 @@ export function Lesson1Quiz() {
                       disabled={submitted}
                       className={`flex w-full items-center justify-between gap-3 rounded-xl border px-4 py-3 text-right text-sm font-medium transition ${
                         correct
-                          ? "border-emerald-400/70 bg-emerald-500/15 text-emerald-50"
+                          ? "border-emerald-500/55 bg-emerald-50 text-emerald-900"
                           : wrong
-                            ? "border-rose-400/70 bg-rose-500/15 text-rose-50"
+                            ? "border-red-400/60 bg-red-50 text-red-900"
                             : selected
-                              ? "border-pink-300/60 bg-pink-500/20 text-white"
-                              : "border-pink-400/20 bg-black/25 text-pink-50 hover:bg-pink-500/10"
+                              ? "border-theme-accent/45 bg-theme-secondary/18 text-theme-dark"
+                              : "border-theme-primary/15 bg-white/75 text-theme-dark hover:bg-theme-secondary/10"
                       }`}
                     >
                       <span>{opt.label}</span>
                       {submitted && opt.key === q.correct && (
-                        <span className="shrink-0 text-xs text-emerald-200">صحيحة</span>
+                        <span className="shrink-0 text-xs font-semibold text-emerald-700">صحيحة</span>
                       )}
                     </button>
                   </li>
@@ -184,41 +187,42 @@ export function Lesson1Quiz() {
           )}
 
           {submitted && q.type === "tf" && (
-            <p className="mt-3 text-sm text-pink-100/80">
+            <p className="mt-3 text-sm text-theme-dark/75">
               الإجابة الصحيحة: <strong>{q.correct ? "صح" : "خطأ"}</strong>
             </p>
           )}
         </div>
       ))}
 
-      <div className="rounded-2xl border border-pink-400/40 bg-pink-950/30 p-6">
+      <div className="surface-card rounded-2xl border border-theme-accent/25 p-6">
         {!submitted ? (
           <button
             type="button"
             onClick={() => setSubmitted(true)}
-            className="w-full rounded-xl bg-gradient-to-l from-pink-500 to-rose-500 py-3 text-base font-bold text-white shadow-lg shadow-pink-600/30 transition hover:brightness-110 sm:w-auto sm:px-10"
+            className="w-full rounded-xl bg-gradient-to-l from-theme-primary to-theme-accent py-3 text-base font-bold text-white shadow-lg shadow-theme-primary/28 ring-1 ring-theme-dark/10 transition hover:brightness-110 sm:w-auto sm:px-10"
           >
             إنهاء وتقييم
           </button>
         ) : (
           <div className="space-y-4 text-right">
-            <h2 className="text-xl font-bold text-white">نتيجتك</h2>
-            <p className="text-3xl font-extrabold text-pink-200">
-              {score} / {total} <span className="text-lg text-pink-100/70">({percent}%)</span>
+            <h2 className="text-xl font-bold text-theme-dark">نتيجتك</h2>
+            <p className="text-3xl font-extrabold text-theme-accent">
+              {score} / {total}{" "}
+              <span className="text-lg text-theme-dark/60">({percent}%)</span>
             </p>
-            <p className="text-pink-50/95">{message}</p>
+            <p className="text-theme-dark/90">{message}</p>
             {strengthsWeakness}
             <div className="flex flex-wrap gap-3 pt-2">
               <button
                 type="button"
                 onClick={reset}
-                className="rounded-xl border border-pink-400/35 bg-pink-950/40 px-5 py-2.5 text-sm font-bold text-pink-50 hover:bg-pink-500/15"
+                className="rounded-xl border border-theme-accent/35 bg-white/85 px-5 py-2.5 text-sm font-bold text-theme-dark hover:bg-theme-secondary/15"
               >
                 إعادة المحاولة
               </button>
               <a
                 href="/lesson1"
-                className="inline-flex items-center justify-center rounded-xl bg-gradient-to-l from-fuchsia-500 to-pink-500 px-5 py-2.5 text-sm font-bold text-white shadow-md shadow-pink-600/25 hover:brightness-110"
+                className="inline-flex items-center justify-center rounded-xl bg-gradient-to-l from-theme-primary to-theme-accent px-5 py-2.5 text-sm font-bold text-white shadow-md shadow-theme-primary/28 ring-1 ring-theme-dark/10 hover:brightness-110"
               >
                 مراجعة الدرس
               </a>

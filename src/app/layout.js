@@ -15,9 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl" className={tajawal.variable}>
-      <body
-        className={`${tajawal.className} min-h-screen bg-gradient-to-b from-[#2d1320] via-[#4a1530] to-[#1a0a12] text-pink-50 antialiased`}
-      >
+      <body className={`${tajawal.className} min-h-screen antialiased`}>
         {children}
       </body>
     </html>

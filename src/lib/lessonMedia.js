@@ -1,29 +1,48 @@
-/** مسارات محلية تحت public/lessons — العلم مُنزَّل من ويكيميديا كومنز؛ باقي الرسوم رسوم SVG تعليمية. */
+/** صور حقيقية من ويكيميديا كومنز (محتوى مرخّص بحرية) — عناوينها البعيدة مُفعّلة في next.config */
 export const MEDIA_NOTE =
-  "الصور: علم مصر من ويكيميديا كومنز، والخرائط والأشكال التوضيحية مُعدّة للدرس على المنصة.";
+  "الصور من ويكيميديا كومنز (محتوى حر). يمكن استبدال الروابط أو تسميات الملفات من lessonMedia.js.";
+
+/** روابط ثابتة مُختبرة — لا تغيّر أبعاد المسار (مثل 1280px) إلا بعد التحقق من وجود الملف */
+const WM = {
+  flagEgyptPng:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/1280px-Flag_of_Egypt.svg.png",
+  issNileWide:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/ISS035-E-007148_Nile_-_Sinai_-_Dead_Sea_-_Wide_Angle_View.jpg/1280px-ISS035-E-007148_Nile_-_Sinai_-_Dead_Sea_-_Wide_Angle_View.jpg",
+  egyptInRegion:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Egypt_in_its_region_%28de-facto%29.svg/1280px-Egypt_in_its_region_%28de-facto%29.svg.png",
+  egyptCiaMap: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Egypt-CIA_WFB_Map.png",
+  nileDeltaSatellite:
+    "https://upload.wikimedia.org/wikipedia/commons/f/f5/Satellite_picture_of_the_Nile_Delta%2C_Egypt.jpg",
+  suezCanalEo: "https://upload.wikimedia.org/wikipedia/commons/6/6e/SuezCanal-EO.JPG",
+  egyptTopographyAr: "https://upload.wikimedia.org/wikipedia/commons/d/de/Egypt_Topography-ar.png",
+  whiteDesert:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/White_Desert%2C_Egypt.jpg/1280px-White_Desert%2C_Egypt.jpg",
+  nileGreenModis:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Gorgeous_Green_along_the_Nile_River_%28MODIS%29.jpg/1280px-Gorgeous_Green_along_the_Nile_River_%28MODIS%29.jpg",
+};
 
 const flag = {
-  src: "/lessons/flag-egypt.png",
+  src: WM.flagEgyptPng,
   alt: "علم جمهورية مصر العربية",
-  caption: "علم مصر — رمز وطني (مصدر الصورة: ويكيميديا كومنز)",
+  caption: "علم مصر — رمز وطني (ويكيميديا كومنز)",
 };
 
 export const lessonCardImages = {
   1: {
-    src: "/lessons/hero-lesson1.svg",
-    alt: "تعريف بدرس موقع مصر وعلم ورسم خريطة",
+    src: WM.egyptInRegion,
+    alt: "خريطة توضح موقع مصر بين الدول المجاورة",
   },
   2: {
-    src: "/lessons/relief-schematic.svg",
-    alt: "رسم توضيحي لسطح مصر",
+    src: WM.egyptTopographyAr,
+    alt: "خريطة طبوغرافية لمصر بالعربية",
   },
   3: {
-    src: "/lessons/climate-schematic.svg",
-    alt: "رموز مناخية صحراوية",
+    src: WM.whiteDesert,
+    alt: "مشهد صحراوي في البحر الأبيض — مناخ جاف",
   },
   4: {
-    src: "/lessons/economy-schematic.svg",
-    alt: "رموز لنشاط اقتصادي وزراعة",
+    src: WM.nileGreenModis,
+    alt: "المساحات الخضراء على ضفاف النيل من الأقمار الصناعية",
   },
 };
 
@@ -31,47 +50,47 @@ export const lesson1Figures = {
   start: [
     flag,
     {
-      src: "/lessons/hero-lesson1.svg",
-      alt: "لمحة عن خريطة مصر وتمثيل لألوان العلم في إطار الدرس",
-      caption: "خريطة تعبيرية وعناصر وطنية — كما في واجهة البداية بالملف",
+      src: WM.issNileWide,
+      alt: "صورة للأرض من الفضاء: وادي النيل وسيناء والبحر المتوسط",
+      caption: "مصر ووادي النيل من الفضاء — صورة أرشيف وكالة ناسا / ويكيميديا كومنز",
     },
   ],
   part1: {
-    src: "/lessons/map-africa-egypt.svg",
-    alt: "رسم يوضح موقع مصر في شمال شرق أفريقيا",
-    caption: "موقع مصر بالنسبة لأفريقيا والبحر المتوسط",
+    src: WM.egyptInRegion,
+    alt: "خريطة توضح موقع مصر في شمال شرق أفريقيا والشرق الأوسط",
+    caption: "موقع مصر بالنسبة للقارة والبحر المتوسط (خريطة سياسية)",
   },
   part2: {
-    src: "/lessons/map-egypt-borders.svg",
-    alt: "رسم تعليمي لحدود مصر مع البحار والدول",
-    caption: "تمييز الحدود الطبيعية والبشرية — توضيح بصري",
+    src: WM.egyptCiaMap,
+    alt: "خريطة سياسية لمصر تُظهر المحافظات والحدود",
+    caption: "خريطة تفصيلية للإقليم — حدود ومدن رئيسية (خريطة CIA، ويكيميديا)",
   },
   part3: {
-    src: "/lessons/nile-schematic.svg",
-    alt: "رسم مبسّط لمجري النيل والدلتا",
-    caption: "دور النيل في الربط بين الشمال والجنوب",
+    src: WM.nileDeltaSatellite,
+    alt: "صورة قمر صناعي للدلتا والنيل",
+    caption: "دلتا النيل ومجري النيل من الفضاء — يربط الجنوب بالشمال",
   },
   part4: {
-    src: "/lessons/suez-schematic.svg",
-    alt: "رسم يوضح ربط البحرين عبر قناة",
-    caption: "قناة السويس تربط المتوسط بالبحر الأحمر",
+    src: WM.suezCanalEo,
+    alt: "صورة جوية لقناة السويس والأراضي المجاورة",
+    caption: "قناة السويس تربط البحر المتوسط بالبحر الأحمر (صورة أرث فضائية)",
   },
 };
 
 export const lesson2Figure = {
-  src: "/lessons/relief-schematic.svg",
-  alt: "سطح مصر — وادٍ ودلتا وهضبة وصحراء (مبسط)",
-  caption: "ملخص تضاريسي للمناقشة مع الصورة التوضيحية",
+  src: WM.egyptTopographyAr,
+  alt: "خريطة طبوغرافية لمصر — هضاب، وادي النيل، الدلتا، والصحاري",
+  caption: "تضاريس مصر (أسماء عربية) — ويكيميديا كومنز",
 };
 
 export const lesson3Figure = {
-  src: "/lessons/climate-schematic.svg",
-  alt: "رموز للمناخ الصحراوي والساحلي",
-  caption: "ربط الحرارة والجفاف وتأثير البحر",
+  src: WM.whiteDesert,
+  alt: "تكوينات صخرية وبيئة صحراوية في مصر",
+  caption: "بيئة صحراوية جافة — صلة بالحرارة والجفاف في المناخ (البحر الأبيض)",
 };
 
 export const lesson4Figure = {
-  src: "/lessons/economy-schematic.svg",
-  alt: "نشاط اقتصادي وزراعة على مياه النيل",
-  caption: "صلة الموارد البشرية بالأنشطة الأساسية",
+  src: WM.nileGreenModis,
+  alt: "شرائط خضراء على ضفاف النيل وسط الصحراء",
+  caption: "الزراعة والأنشطة على مياه النيل — صورة MODIS / ناسا",
 };
